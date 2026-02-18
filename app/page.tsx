@@ -30,7 +30,7 @@ export default function Home() {
               title="Outplacement Services"
               description="Comprehensive support for individuals and organizations during career transitions. We provide the technical and adaptive guidance needed to navigate change successfully."
               icon="🎯"
-              link="/services#outplacement"
+              link="/outplacement"
             />
             <ServiceCard
               title="Job Search Critique"
@@ -42,7 +42,7 @@ export default function Home() {
               title="Executive Coaching"
               description="One-on-one coaching for leaders seeking to align their careers with their values, develop new skills, and navigate complex workplace challenges."
               icon="💼"
-              link="/services#coaching"
+              link="/services"
             />
           </div>
         </div>

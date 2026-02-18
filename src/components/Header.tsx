@@ -9,10 +9,11 @@ export default function Header() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
+    { name: 'Outplacement', href: '/outplacement' },
+    { name: 'Executive Coaching', href: '/services' },
+    { name: 'Job Search Critique', href: '/job-search-critique' },
     { name: 'Resources', href: '/resources' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Job Search Critique', href: '/job-search-critique' },
   ];
 
   return (
