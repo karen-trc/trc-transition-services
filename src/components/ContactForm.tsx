@@ -9,6 +9,7 @@ export default function ContactForm() {
     phone: '',
     service: '',
     message: '',
+    website: '', // honeypot field — must stay empty for real users
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
@@ -45,6 +46,7 @@ export default function ContactForm() {
         phone: '',
         service: '',
         message: '',
+        website: '',
       });
     } catch (error) {
       setStatus('error');
@@ -54,6 +56,20 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {/* Honeypot — hidden from real users, traps bots */}
+      <div style={{ position: 'absolute', left: '-9999px', top: '-9999px' }} aria-hidden="true">
+        <label htmlFor="website">Website (leave blank)</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+          value={formData.website}
+          onChange={handleChange}
+        />
+      </div>
+
       {/* Name */}
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-dark mb-2">
