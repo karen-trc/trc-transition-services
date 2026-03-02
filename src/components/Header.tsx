@@ -12,6 +12,7 @@ export default function Header() {
     { name: 'Outplacement', href: '/outplacement' },
     { name: 'Executive Coaching', href: '/services' },
     { name: 'Job Search Critique', href: '/job-search-critique' },
+    { name: 'Coach Certification', href: '/career-coaching-certification' },
     { name: 'Resources', href: '/resources' },
     { name: 'Contact', href: '/contact' },
   ];
