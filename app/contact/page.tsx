@@ -62,7 +62,16 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-12 bg-cream rounded-lg p-6">
+              <div className="mt-8 border border-red-200 bg-red-50 rounded-lg px-5 py-3">
+                <p className="text-sm font-semibold text-red-700 uppercase tracking-wide">
+                  Absolutely No Solicitation
+                </p>
+                <p className="text-sm text-red-600 mt-1">
+                  This form is for prospective clients only. Unsolicited sales or marketing messages will not receive a response.
+                </p>
+              </div>
+
+              <div className="mt-6 bg-cream rounded-lg p-6">
                 <h3 className="text-xl font-bold text-primary mb-3">What to Expect</h3>
                 <ul className="space-y-2 text-gray-dark">
                   <li className="flex items-start">
